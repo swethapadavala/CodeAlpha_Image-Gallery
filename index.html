@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <p class="eyebrow">A COLLECTION OF MOMENTS</p>
+    <h1>Visual Gallery<span>.</span></h1>
+    <p class="subtitle">Explore the beauty of the world through images.</p>
+  </header>
+
+  <main class="container">
+    <nav class="filters" aria-label="Filter images">
+      <button class="filter active" data-category="all">All Images</button>
+      <button class="filter" data-category="nature">Nature</button>
+      <button class="filter" data-category="architecture">Architecture</button>
+      <button class="filter" data-category="wildlife">Wildlife</button>
+    </nav>
+
+    <section class="gallery" id="gallery" aria-label="Image gallery">
+      <article class="gallery-item" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800"
+          alt="Mountain lake surrounded by green hills" loading="lazy">
+        <div class="image-info">
+          <span>Nature</span><h3>Mountain Escape</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=800"
+          alt="Modern architectural structure" loading="lazy">
+        <div class="image-info">
+          <span>Architecture</span><h3>Modern Lines</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="wildlife">
+        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800"
+          alt="Wild deer in a natural landscape" loading="lazy">
+        <div class="image-info">
+          <span>Wildlife</span><h3>Into the Wild</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800"
+          alt="Sunlight passing through a forest" loading="lazy">
+        <div class="image-info">
+          <span>Nature</span><h3>Forest Dreams</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=800&sat=-60"
+          alt="Geometric details of a building" loading="lazy">
+        <div class="image-info">
+          <span>Architecture</span><h3>Urban Geometry</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="wildlife">
+        <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?w=800"
+          alt="Wild animal in its habitat" loading="lazy">
+        <div class="image-info">
+          <span>Wildlife</span><h3>Wild Encounters</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
+          alt="Beautiful open landscape" loading="lazy">
+        <div class="image-info">
+          <span>Nature</span><h3>Open Horizons</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800"
+          alt="Contemporary white building" loading="lazy">
+        <div class="image-info">
+          <span>Architecture</span><h3>Minimal Spaces</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="wildlife">
+        <img src="https://images.unsplash.com/photo-1551717743-49959800b1f6?w=800"
+          alt="Animal resting in nature" loading="lazy">
+        <div class="image-info">
+          <span>Wildlife</span><h3>Nature's Friends</h3>
+        </div>
+      </article>
+    </section>
+
+    <p class="gallery-count" id="galleryCount" aria-live="polite">
+      Showing 9 images
+    </p>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog"
+       aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+    <button class="close" id="closeBtn" aria-label="Close viewer">&times;</button>
+    <button class="nav prev" id="prevBtn" aria-label="Previous image">&#10094;</button>
+    <figure class="lightbox-content">
+      <img id="lightboxImg" src="" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+      <p id="lightboxCount"></p>
+    </figure>
+    <button class="nav next" id="nextBtn" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <footer>
+    <p>Designed with creativity &amp; curiosity.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
